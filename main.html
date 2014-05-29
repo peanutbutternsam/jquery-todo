@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
@@ -18,30 +20,30 @@
 		</div>
 		<div class="list-change-wrap">
 			<div id="add-item-container">
-				<input type="text" id="userInput" class="add-to-do" maxlength="70" placeholder="Enter something here...">
+				<input type="text" id="user-input" class="add-to-do" maxlength="70" placeholder="Enter something here...">
 				<input type="submit" class="submit" value="Add">
 			</div>
 
 			<ul class="list">
-				<li class="li-text gray">
+				<li class="item-container incomplete">
 					<p class="to-do-item">This is a to-do list app</p>
-					<span id="user-action"></span>
+					<span class="change-status"></span>
 				</li>
-				<li id="style2" class="li-text">
-					<p id="style2t" class="to-do-item">Type in your items above</p>
-					<span id="complete"></span>
+				<li class="item-container complete">
+					<p class="to-do-item">Type in your items above</p>
+					<span class="complete-icon"></span>
 				</li>
-				<li id="style3" class="li-text">
-					<p id="style3t" class="to-do-item">Click on the boxes to select </p>
-					<span id="delete"></span>
+				<li class="item-container delete">
+					<p class="to-do-item">Click on the boxes to select </p>
+					<span class="delete-icon"></span>
 				</li>
-				<li id="style4" class="li-text">
+				<li class="item-container">
 					<p class="to-do-item">Hit the trash can to toss selected items</p>
-					<span id="user-action"></span>
+					<span class="change-status"></span>
 				</li>
-				<li id="style5" class="li-text">
+				<li class="item-container">
 					<p class="to-do-item">Hit refresh to start over</p>
-					<span id="user-action"></span>
+					<span class="change-status"></span>
 				</li>
 			</ul>
 			<div id="icon-container">

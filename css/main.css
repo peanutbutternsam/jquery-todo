@@ -86,6 +86,7 @@ body {
 	width: 30%;
 	min-width: 180px;
 	margin: 0 auto;
+	padding-top: 10px;
 }
 
 #trash {
@@ -132,7 +133,7 @@ body {
 	list-style:none;
 }
 
-.li-text {
+.item-container {
 	display: list-item;
 	overflow:hidden;
 	margin:10px 0;
@@ -150,7 +151,7 @@ body {
 	float: left;
 	margin-left: 10px;
 	background: transparent;
-	font-size: 14px;
+	font-size: 16px;
 	color:#757575;
 	line-height: normal;
 	overflow: visible;
@@ -159,22 +160,37 @@ body {
 	border-radius: 0;
 }
 
-.user-action {
+.change-status {
 	height:48px;
 	width:45px;
 	float:right;
 	color:#757575;
 } 
 
-#style2{
-	background-color:#ddf8de;
-	
+.incomplete {
 }
-#style2t {
+
+.complete {
+	background-color:#ddf8de;
 	color: #3ca13c;
 }
 
-#complete {
+.delete {
+	background-color: #f8ddd4;
+	color: #a1543c;
+}
+
+
+.change-status {
+	cursor: pointer;
+	float: right;
+	height: 25px;
+	width: 25px;
+	background: url('../images/square.png') no-repeat;
+	margin: 11px;
+}
+
+.complete-icon {
 	cursor: pointer;
 	float: right;
 	height: 25px;
@@ -183,7 +199,7 @@ body {
 	margin: 11px;
 }
 
-#delete {
+.delete-icon {
 	cursor: pointer;
 	float: right;
 	height: 22px;
@@ -192,13 +208,7 @@ body {
 	margin: 13px;
 }
 
-#style3 {
-	background-color: #f8ddd4;
-}
 
-#style3t {
-	color: #a1543c;
-}
 
 
 
