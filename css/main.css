@@ -125,7 +125,7 @@ body {
 	margin:5px auto;
 	max-width: 80%;
 	overflow: hidden;
-	/*border:2px dashed gray;*/
+	border:2px solid #eee;
 	background-color: white;
 }
 
